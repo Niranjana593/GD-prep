@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home.jsx'
 // import About from './components/About.jsx'
 // import Contact from './components/Contact.jsx'
-// import './App.css'
+import './App.css'
 import Footer from './components/Footer.jsx'
 import { BrowserRouter } from 'react-router-dom'
 const App = () => {
