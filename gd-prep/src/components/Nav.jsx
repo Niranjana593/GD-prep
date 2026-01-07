@@ -9,15 +9,18 @@ const Nav = () => {
   }
   return (
     <div>
-      <nav className={`${show ? 'flex-col left-0' : 'flex -left-25'} flex justify-between items-center  border-2 roboto text-[14px]`}>
-        <div className="logo w-full  flex justify-between">
+      <nav className="flex justify-between items-center border-2 roboto text-[18px]">
+        <div className="logo w-full flex justify-between">
           <img width={50} onClick={handleclick} className='ml-3 md:hidden' src="menu.png" alt="" />
-          <Link to="/"><img className='' width={80} height={80} src="logo4.png" alt="" /></Link>
+          <Link to="/"><img className={`${show} ? 'ml-20':''`} width={80} height={80} src="logo4.png" alt="" /></Link>
         </div>
-        <ul className={`${show ? 'flex-col gap-3 top-20 left-0' : '-left-25'} absolute transition-all duration-300 md:relative md:left-0 md:flex gap-20 font-bold text-lg `}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/services">Services</Link></li>
+        <ul className={`${show ? 'translate-x-0 bg-white' : '-translate-x-full'} absolute top-0 left-0 w-50 h-screen z-10 flex flex-col gap-3 p-4 text-black transform transition-transform duration-300 md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:bg-transparent md:translate-x-0 md:flex-row md:gap-20 md:p-0 md:text-inherit`}>
+          <div className='flex'>
+          <li className='w-full'><Link to="/">Home</Link></li>
+            <img onClick={handleclick} className={`${show ? 'block':'hidden'}`} src="close.png" alt="" />
+          </div>
+          <li className='w-full'><Link to="/about">About</Link></li>
+          <li className='w-full'><Link to="/services">Services</Link></li>
           <li className='pr-10'><Link to="/login">Login</Link></li>
         </ul>
       </nav>
