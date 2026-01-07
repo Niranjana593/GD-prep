@@ -7,12 +7,12 @@ const Home = () => {
           <div className="tagline w-[50%]  roboto font-block ">
             <h1 className='text-[31px] indent-10'>Master Group Discussions with AI and Peers. Ace Your Interviews.</h1>
             <h1 className='font-[400]'>Prepare the Group discussion with the AI and Peer for your Interview, the compitative prepration.</h1>
-            <div className='flex gap-5 mt-8'>
+            <div className='flex gap-8 mt-8'>
               <button className='px-8 rounded-4xl bg-[#028857] cursor-pointer font-[700] py-3 border-2'>Practice With AI</button>
               <button className='px-8 rounded-4xl bg-[#028857] cursor-pointer font-[700] py-3 border-2'>Practice With Peers</button>
             </div>
           </div>
-            <img width={350} className='max-w-[50%]  border-2' src="logo.png" alt="" />
+            <img width={350} className='max-w-[50%]  shadow-lg shadow-white' src="home.png" alt="" />
         </div>
     </div>
   )
