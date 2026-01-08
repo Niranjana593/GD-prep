@@ -56,8 +56,11 @@ const Home = () => {
                 <p className='pl-3 text-gray-500 text-sm'>Clarity, confidence analysis</p>
                 </div>
               </div>
-          </div>
+        </div>
+
       </div>
+      <div className='w-full h-[0.3px] border-1 border-gray-700'></div>
+      <div className='Practice'></div>
     </div>
   )
 }
